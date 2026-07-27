@@ -1,0 +1,4 @@
+Room: living_room
+Device: tv
+Type: socket
+Power: 120 W

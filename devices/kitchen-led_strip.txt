@@ -1,0 +1,4 @@
+Room: kitchen
+Device: led_strip
+Type: light
+Power: 20 W

@@ -1,0 +1,4 @@
+Room: living_room
+Device: ac
+Type: socket
+Power: 1500 W

@@ -1,0 +1,4 @@
+Room: bedroom
+Device: phone_charger
+Type: socket
+Power: 15 W

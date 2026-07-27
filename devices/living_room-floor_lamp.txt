@@ -1,0 +1,4 @@
+Room: living_room
+Device: floor_lamp
+Type: light
+Power: 60 W

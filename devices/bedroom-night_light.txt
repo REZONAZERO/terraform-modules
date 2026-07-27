@@ -1,0 +1,4 @@
+Room: bedroom
+Device: night_light
+Type: light
+Power: 5 W

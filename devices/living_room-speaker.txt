@@ -1,0 +1,4 @@
+Room: living_room
+Device: speaker
+Type: socket
+Power: 30 W

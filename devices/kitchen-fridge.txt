@@ -1,0 +1,4 @@
+Room: kitchen
+Device: fridge
+Type: socket
+Power: 150 W

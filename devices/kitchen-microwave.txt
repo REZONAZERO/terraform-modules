@@ -1,0 +1,4 @@
+Room: kitchen
+Device: microwave
+Type: socket
+Power: 800 W
