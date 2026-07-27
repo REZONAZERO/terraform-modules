@@ -1,3 +1,6 @@
+![Terraform Version](https://img.shields.io/badge/terraform-%3E%3D1.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 # Terraform Modules Collection
 
 Коллекция модулей для обучения и демонстрации навыков.
