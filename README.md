@@ -32,6 +32,18 @@
 
 ---
 
+## 📂 Примеры
+
+В папке [`examples/`](examples) находятся готовые сценарии использования:
+
+- [`greeter`](examples/greeter) — генерация приветствия
+- [`dynamic-asg`](examples/dynamic-asg) — создание Auto Scaling Group (требует AWS)
+- [`devices-flatten`](examples/devices-flatten) — демонстрация `flatten` и `for_each`
+
+Каждый пример содержит минимальный `main.tf` и переменные для запуска.
+
+---
+
 ## 🚀 Использование
 
 ```hcl
