@@ -3,48 +3,48 @@
 ![Terraform Version](https://img.shields.io/badge/terraform-%3E%3D1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-Коллекция модулей для обучения и демонстрации навыков работы с Terraform: `dynamic` блоки, `for_each`, `flatten`, модульная структура.
+A collection of Terraform modules for learning and demonstrating skills: `dynamic` blocks, `for_each`, `flatten`, module structure, and AWS integrations.
 
 ---
 
-## 📦 Модули
+## 📦 Modules
 
-| Модуль | Описание | Ключевые фичи |
-|--------|----------|---------------|
-| [`archive`](modules/archive) | Архивирует конфиг в zip | `archive_file` |
-| [`data-http`](modules/data-http) | Работа с HTTP data source | `data "http"` |
-| [`database`](modules/database) | Генерирует конфиг БД | `templatefile`, `local_file` |
-| [`devices-flatten`](modules/devices-flatten) | Демонстрация `flatten` и `for_each` | `flatten`, `for_each` |
-| [`dynamic`](modules/dynamic) | Базовый пример `dynamic` блоков | `dynamic` |
-| [`dynamic-asg`](modules/dynamic-asg) | Auto Scaling Group с динамическими тегами | `dynamic`, `aws_autoscaling_group` |
-| [`dynamic-basic`](modules/dynamic-basic) | Простейший `dynamic` блок | `dynamic` |
-| [`dynamic-ebs-block-device`](modules/dynamic-ebs-block-device) | EBS-блоки через `dynamic` | `dynamic`, `ebs_block_device` |
-| [`dynamic-tags`](modules/dynamic-tags) | Динамические теги для ASG | `dynamic`, `tags` |
-| [`greeter`](modules/greeter) | Генерация приветствий с `random_pet` | `random_pet`, `local_file` |
-| [`loop`](modules/loop) | Демонстрация `count` и циклов | `count` |
-| [`loop2`](modules/loop2) | Демонстрация `count` (вариация) | `count` |
-| [`regions-flatten`](modules/regions-flatten) | Flatten на примере регионов | `flatten`, `for_each` |
-| [`services-flatten-practice`](modules/services-flatten-practice) | Flatten на примере сервисов | `flatten`, `for_each` |
-| [`some-module/data_source_example`](modules/some-module/data_source_example) | Пример data source | `data` |
-| [`usr-groups`](modules/usr-groups) | Управление пользовательскими группами | `for_each` |
-| [`vpc`](modules/vpc) | Базовый VPC модуль | `aws_vpc`, `aws_subnet` |
-| [`webapp`](modules/webapp) | Деплой веб-приложения | `aws_instance`, `user_data` |
-
----
-
-## 📂 Примеры
-
-В папке [`examples/`](examples) находятся готовые сценарии использования:
-
-- [`greeter`](examples/greeter) — генерация приветствия
-- [`dynamic-asg`](examples/dynamic-asg) — создание Auto Scaling Group (требует AWS)
-- [`devices-flatten`](examples/devices-flatten) — демонстрация `flatten` и `for_each`
-
-Каждый пример содержит минимальный `main.tf` и переменные для запуска.
+| Module | Description | Key features |
+|--------|-------------|--------------|
+| [`archive`](modules/archive) | Archives config to zip | `archive_file` |
+| [`data-http`](modules/data-http) | HTTP data source example | `data "http"` |
+| [`database`](modules/database) | Generates DB config | `templatefile`, `local_file` |
+| [`devices-flatten`](modules/devices-flatten) | `flatten` + `for_each` demonstration | `flatten`, `for_each` |
+| [`dynamic`](modules/dynamic) | Basic `dynamic` block example | `dynamic` |
+| [`dynamic-asg`](modules/dynamic-asg) | Auto Scaling Group with dynamic tags | `dynamic`, `aws_autoscaling_group` |
+| [`dynamic-basic`](modules/dynamic-basic) | Simplest `dynamic` block | `dynamic` |
+| [`dynamic-ebs-block-device`](modules/dynamic-ebs-block-device) | EBS volumes via `dynamic` | `dynamic`, `ebs_block_device` |
+| [`dynamic-tags`](modules/dynamic-tags) | Dynamic tags for ASG | `dynamic`, `tags` |
+| [`greeter`](modules/greeter) | Greeting generation with `random_pet` | `random_pet`, `local_file` |
+| [`loop`](modules/loop) | `count` and loops demonstration | `count` |
+| [`loop2`](modules/loop2) | `count` variation | `count` |
+| [`regions-flatten`](modules/regions-flatten) | Flatten on regions example | `flatten`, `for_each` |
+| [`services-flatten-practice`](modules/services-flatten-practice) | Flatten on services example | `flatten`, `for_each` |
+| [`some-module/data_source_example`](modules/some-module/data_source_example) | Data source usage | `data` |
+| [`usr-groups`](modules/usr-groups) | User group management | `for_each` |
+| [`vpc`](modules/vpc) | Basic VPC module | `aws_vpc`, `aws_subnet` |
+| [`webapp`](modules/webapp) | Web app deployment | `aws_instance`, `user_data` |
 
 ---
 
-## 🚀 Использование
+## 📂 Examples
+
+The [`examples/`](examples) folder contains ready-to-run usage scenarios:
+
+- [`greeter`](examples/greeter) — greeting generation
+- [`dynamic-asg`](examples/dynamic-asg) — Auto Scaling Group creation (requires AWS)
+- [`devices-flatten`](examples/devices-flatten) — `flatten` + `for_each` demonstration
+
+Each example includes a minimal `main.tf` and required variables.
+
+---
+
+## 🚀 Usage
 
 ```hcl
 module "example" {
