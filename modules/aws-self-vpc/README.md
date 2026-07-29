@@ -1,6 +1,6 @@
 # AWS VPC Module
 
-Создаёт VPC с публичными и приватными подсетями в нескольких зонах доступности.
+Creates VPC with public and private subnets in available zones.
 
 ## Inputs
 
