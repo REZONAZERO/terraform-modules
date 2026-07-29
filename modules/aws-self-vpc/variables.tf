@@ -7,6 +7,7 @@ variable "vpc_config" {
     public_subnets = list(string)
     private_subnets = list(string)
   })
+
   default = {
     cidr_block = "10.0.0.0/16"
     name       = "my-vpc"
