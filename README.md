@@ -3,7 +3,7 @@
 ![Terraform Version](https://img.shields.io/badge/terraform-%3E%3D1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-A collection of Terraform modules for learning and demonstrating skills: `dynamic` blocks, `for_each`, `flatten`, module structure, and AWS integrations.
+A collection of Terraform modules for learning and demonstrating skills: `dynamic` blocks, `concat`, `for_each`, `flatten`, module structure, and AWS integrations.
 
 ---
 
@@ -12,6 +12,7 @@ A collection of Terraform modules for learning and demonstrating skills: `dynami
 | Module | Description | Key features |
 |--------|-------------|--------------|
 | [`archive`](modules/archive) | Archives config to zip | `archive_file` |
+| [`aws-self-vpc`](modules/aws-self-vpc) | Creates VPC for subnets | `concat`, `subnets` |
 | [`data-http`](modules/data-http) | HTTP data source example | `data "http"` |
 | [`database`](modules/database) | Generates DB config | `templatefile`, `local_file` |
 | [`devices-flatten`](modules/devices-flatten) | `flatten` + `for_each` demonstration | `flatten`, `for_each` |
